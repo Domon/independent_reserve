@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.independentreserve.com/Public/GetMarketSummary?PrimaryCurrencyCode=invalid_primary&SecondaryCurrencyCode=invalid_secondary
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.independentreserve.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 02 Nov 2017 13:30:01 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '43'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0067a13df024d0d3af2e4a524b4366481509629401; expires=Fri, 02-Nov-18
+        13:30:01 GMT; path=/; domain=.independentreserve.com; HttpOnly; Secure
+      Cache-Control:
+      - private
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3b77722cc85894cf-NRT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"Message":"Invalid Primary Currency Code"}'
+    http_version: 
+  recorded_at: Thu, 02 Nov 2017 13:30:01 GMT
+recorded_with: VCR 3.0.3

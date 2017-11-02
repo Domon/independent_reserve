@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.independentreserve.com/Public/GetMarketSummary?PrimaryCurrencyCode=Xbt&SecondaryCurrencyCode=Aud
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.independentreserve.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 02 Nov 2017 13:30:00 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '345'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9a655b474e3082d97d5a7360bb3a3aa31509629400; expires=Fri, 02-Nov-18
+        13:30:00 GMT; path=/; domain=.independentreserve.com; HttpOnly; Secure
+      Cache-Control:
+      - private
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3b7772265a882e0f-NRT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"DayHighestPrice":9545.0,"DayLowestPrice":8750.0,"DayAvgPrice":9215.18,"DayVolumeXbt":481.67961367,"DayVolumeXbtInSecondaryCurrrency":476.32153486,"CurrentLowestOfferPrice":9409.94,"CurrentHighestBidPrice":9350.0,"LastPrice":9449.19,"PrimaryCurrencyCode":"Xbt","SecondaryCurrencyCode":"Aud","CreatedTimestampUtc":"2017-11-02T13:29:59.8126139Z"}'
+    http_version: 
+  recorded_at: Thu, 02 Nov 2017 13:30:00 GMT
+recorded_with: VCR 3.0.3
