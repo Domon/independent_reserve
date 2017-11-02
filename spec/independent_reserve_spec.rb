@@ -18,17 +18,17 @@ RSpec.describe IndependentReserve do
       it 'returns market summary' do
         expect(market_summary).to eq(
           {
-            'DayHighestPrice'                  => 9545.0,
-            'DayLowestPrice'                   => 8750.0,
-            'DayAvgPrice'                      => 9215.18,
-            'DayVolumeXbt'                     => 481.67961367,
-            'DayVolumeXbtInSecondaryCurrrency' => 476.32153486,
-            'CurrentLowestOfferPrice'          => 9409.94,
-            'CurrentHighestBidPrice'           => 9350.0,
-            'LastPrice'                        => 9449.19,
-            'PrimaryCurrencyCode'              => 'Xbt',
-            'SecondaryCurrencyCode'            => 'Aud',
-            'CreatedTimestampUtc'              => '2017-11-02T13:29:59.8126139Z',
+            day_highest_price:                      9545.0,
+            day_lowest_price:                       8750.0,
+            day_avg_price:                          9215.18,
+            day_volume_xbt:                         481.67961367,
+            day_volume_xbt_in_secondary_currrency:  476.32153486,
+            current_lowest_offer_price:             9409.94,
+            current_highest_bid_price:              9350.0,
+            last_price:                             9449.19,
+            primary_currency_code:                  'Xbt',
+            secondary_currency_code:                'Aud',
+            created_timestamp_utc:                  '2017-11-02T13:29:59.8126139Z',
           }
         )
       end
@@ -41,7 +41,7 @@ RSpec.describe IndependentReserve do
       it 'returns an error message' do
         expect(market_summary).to eq(
           {
-            "Message" => "Invalid Primary Currency Code",
+            message: "Invalid Primary Currency Code",
           }
         )
       end
