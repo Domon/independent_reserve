@@ -1,8 +1,6 @@
-# IndependentReserve
+# Independent Reserve
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/independent_reserve`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Unofficial Independent Reserve API client.
 
 ## Installation
 
@@ -22,7 +20,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'independent_reserve'
+
+IndependentReserve.market_summary
+# => {
+#      day_highest_price:                     '9545.00'.to_d,
+#      day_lowest_price:                      '8750.00'.to_d,
+#      day_avg_price:                         '9215.18'.to_d,
+#      day_volume_xbt:                        '481.67961367'.to_d,
+#      day_volume_xbt_in_secondary_currrency: '476.32153486'.to_d,
+#      current_lowest_offer_price:            '9409.94'.to_d,
+#      current_highest_bid_price:             '9350.00'.to_d,
+#      last_price:                            '9449.19'.to_d,
+#      primary_currency_code:                 'Xbt',
+#      secondary_currency_code:               'Aud',
+#      created_timestamp_utc:                 '2017-11-02T13:29:59.8126139Z',
+#    }
+```
 
 ## Development
 
@@ -32,7 +47,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/independent_reserve. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Domon/independent_reserve. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
