@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Chun-wei Kuo"]
   spec.email         = ["Dendoh@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Unofficial Independent Reserve API client}
+  spec.description   = %q{Unofficial Independent Reserve API client}
+  spec.homepage      = "https://github.com/Domon/independent_reserve"
   spec.license       = "Apache-2.0"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
