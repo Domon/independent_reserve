@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'bigdecimal'
 require 'http'
 require 'active_support/core_ext/hash/keys'
 require 'active_support/inflector'
@@ -12,7 +13,7 @@ module IndependentReserve
       "&SecondaryCurrencyCode=#{secondary_currency_code}"
 
     response_body = HTTP.get(url).to_s
-    hash = JSON.parse(response_body)
+    hash = JSON.parse(response_body, decimal_class: BigDecimal)
     hash.transform_keys { |key| key.underscore.to_sym }
   end
 end
